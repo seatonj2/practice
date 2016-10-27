@@ -6,6 +6,11 @@ def sum(n):
         result = result + i
     return result
 
+def factorial(n):
+    if n == 1:
+        return 1
+    else:
+        return n * factorial(n-1)
 x = 10
 y = 20
 z = x * y
@@ -13,3 +18,5 @@ z = x * y
 print (x ,"+",y ,"=",z)
 
 print ("Sum of 1 to",x,"=",sum(x))
+
+print ("Factorial has been called with n = 5 \n","=",factorial(5))
